@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client.Client">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorAccent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#cccccc">
+
+            <EditText
+                android:id="@+id/requester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/requester"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/requester_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/requester_contact"
+            android:inputType="phone"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#cccccc">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/location"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="377dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#cccccc">
+
+            <EditText
+                android:id="@+id/job_description"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/job_description"
+                android:inputType="textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorAccent" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="20sp"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

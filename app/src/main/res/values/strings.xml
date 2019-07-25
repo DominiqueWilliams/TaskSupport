@@ -35,7 +35,6 @@
 
     <string name="job_order">JOB ORDER: </string>
     <string name="date_ask">DATE:</string>
-    <string name="requester">REQUESTER:</string>
     <string name="contact">CONTACT:</string>
     <string name="location">LOCATION:</string>
     <string name="assigned">ASSIGNED TO:</string>
@@ -66,4 +65,9 @@
     <string name="tech_sig">TECHNICIAN SIGNATURE</string>
 
     <string name="submit">SUBMIT</string>
+    <string name="job_description">Job Description</string>
+    <string name="requester_contact">Contact No.</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="complete">Complete</string>
+    <string name="requester">REQUESTER:</string>
 </resources>
