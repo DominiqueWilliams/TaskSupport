@@ -28,6 +28,10 @@ public class BobbePagerAdapter extends FragmentPagerAdapter {
                 bFrag = new Page2Fragment();
                 break;
 
+            case 3:
+                bFrag = new Page3Fragment();
+                break;
+
              default:
                  bFrag = new Page0Fragment();
                  break;
@@ -44,6 +48,6 @@ public class BobbePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 }

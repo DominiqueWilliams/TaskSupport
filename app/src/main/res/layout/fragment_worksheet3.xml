@@ -11,15 +11,11 @@
 
     />
 
-    <EditText
-        android:layout_marginTop="@dimen/btn_padding02"
-        android:id="@+id/editText4"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="375dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="155dp" />
+
 
     <TextView
         android:id="@+id/textView1"
@@ -30,15 +26,11 @@
         android:layout_gravity="center_horizontal|center_vertical"
         android:textColor="@color/colorText"/>
 
-    <EditText
-        android:layout_marginTop="@dimen/btn_padding02"
-        android:id="@+id/editText9"
-        android:layout_width="375dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+    <View
+        android:id="@+id/view02"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="@dimen/large"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -59,8 +51,6 @@
         android:text="@string/submit"
         android:textColor="@color/white"
         android:textSize="@dimen/button_text" />
-
-
 
 
 </LinearLayout>
