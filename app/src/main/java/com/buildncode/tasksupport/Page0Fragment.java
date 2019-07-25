@@ -10,10 +10,11 @@ import android.widget.Button;
 
 
 import com.buildncode.tasksupport.Client.Client;
+import com.buildncode.tasksupport.Technician.TechnicianGuideActivity;
 
 
 public class Page0Fragment extends Fragment {
-Button mClientButton;
+Button mClientButton, mTechnicianButton;
 
     public Page0Fragment() {
         // Required empty public constructor
@@ -30,6 +31,14 @@ Button mClientButton;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Client.class);
+                startActivity(intent);
+            }
+        });
+        mTechnicianButton = view.findViewById(R.id.technician);
+        mTechnicianButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TechnicianGuideActivity.class);
                 startActivity(intent);
             }
         });

@@ -8,9 +8,9 @@ import com.buildncode.tasksupport.Technician.Page1Fragment;
 import com.buildncode.tasksupport.Technician.Page2Fragment;
 import com.buildncode.tasksupport.Technician.Page3Fragment;
 
-public class BobbePagerAdapter extends FragmentPagerAdapter {
+public class BobbePagerAdapter2 extends FragmentPagerAdapter {
 
-    public BobbePagerAdapter(FragmentManager fm) {
+    public BobbePagerAdapter2(FragmentManager fm) {
         super(fm);
     }
 
@@ -21,10 +21,19 @@ public class BobbePagerAdapter extends FragmentPagerAdapter {
 
         switch (i){
             case 0:
-                bFrag = new Page0Fragment();
+                bFrag = new Page1Fragment();
                 break;
+
+            case 1:
+                bFrag = new Page2Fragment();
+                break;
+
+            case 2:
+                bFrag = new Page3Fragment();
+                break;
+
              default:
-                 bFrag = new Page0Fragment();
+                 bFrag = new Page1Fragment();
                  break;
         }
 
@@ -39,6 +48,6 @@ public class BobbePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 1;
+        return 3;
     }
 }
