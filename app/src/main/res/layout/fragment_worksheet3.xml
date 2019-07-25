@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5FCE4"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    tools:context=".MainActivity">
+
+
+    />
+
+    <EditText
+        android:layout_marginTop="@dimen/btn_padding02"
+        android:id="@+id/editText4"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height"
+        android:text="@string/tech_sig"
+        android:textSize="@dimen/large"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorText"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/btn_padding02"
+        android:id="@+id/editText9"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/client_sig"
+        android:textSize="@dimen/large"
+        android:textColor="@color/colorText"/>
+
+    <Button
+        android:id="@+id/technician"
+        android:layout_width="@dimen/btn_para_length"
+        android:layout_height="@dimen/btn_para_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/button_text"
+        android:background="@color/colorBtn"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text" />
+
+
+
+
+</LinearLayout>

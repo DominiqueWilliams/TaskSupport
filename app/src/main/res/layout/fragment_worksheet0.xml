@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5FCE4"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:id="@+id/skn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/skn"
+        android:textSize="@dimen/xsmall_txt"
+        android:textColor="@color/colorText"
+        android:paddingTop="@dimen/header_size"/>
+
+    <TextView
+        android:id="@+id/ministry_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="@string/ministry_header"
+        android:textSize="@dimen/xsmall_txt"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="@string/department"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/xsmall_txt" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/title_size"/>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/img_para"
+        android:layout_height="@dimen/img_para"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="@dimen/header_size"
+        app:srcCompat="@drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/client"
+        android:layout_width="@dimen/btn_para_length"
+        android:layout_height="@dimen/btn_para_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/btn_padding02"
+        android:background="@color/colorBtn"
+        android:text="@string/client"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/technician"
+        android:layout_width="@dimen/btn_para_length"
+        android:layout_height="@dimen/btn_para_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/button_text"
+        android:background="@color/colorBtn"
+        android:text="@string/technician"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text" />
+
+
+</LinearLayout>

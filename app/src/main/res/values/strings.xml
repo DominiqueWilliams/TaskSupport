@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Task Support</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_worksheet2">worksheet2Activity</string>
+
+    <string name="skn">St. Christopher and Nevis</string>
+    <string name="ministry_header">Ministry of Justice and Legal Affars and Communications.</string>
+    <string name="department">Department of Information Technology</string>
+
+    <string name="client">Client</string>
+    <string name="technician">Technician</string>
+
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+
+    <string name="status">Status</string>
+    <string name="urgency">Urgency</string>
+
+    <string name="dummytext">LaLaFaLaLand</string>
+    <string name="title_activity_bob">BobActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="job_order">JOB ORDER: </string>
+    <string name="date_ask">DATE:</string>
+    <string name="requester">REQUESTER:</string>
+    <string name="contact">CONTACT:</string>
+    <string name="location">LOCATION:</string>
+    <string name="assigned">ASSIGNED TO:</string>
+
+
+    <string name="john_doe">John Doe</string>
+    <string name="contact_dummy">669-9790</string>
+    <string name="location_dummy">Sandy Point</string>
+    <string name="assigned_dummy">Amanda Baxter</string>
+
+    <string name="assign_it">ASSIGNED</string>
+    <string name="pending">PENDING</string>
+    <string name="planned">PLANNED</string>
+    <string name="solved">SOLVED</string>
+
+    <string name="veryHigh">VERY HIGH</string>
+    <string name="high">HIGH</string>
+    <string name="medium">MEDIUM</string>
+    <string name="low">LOW</string>
+    <string name="verylow">VERY LOW</string>
+
+    <string name="parts_used">Parts Used</string>
+    <string name="solution">Solution / Recommendation</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="client_sig">CLIENT SIGNATURE</string>
+    <string name="tech_sig">TECHNICIAN SIGNATURE</string>
+
+    <string name="submit">SUBMIT</string>
+</resources>
