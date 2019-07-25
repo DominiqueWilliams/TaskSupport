@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D5FCE4"
     tools:context=".Client.Client">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,93 +14,101 @@
         android:orientation="vertical"
         android:padding="20sp">
 
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/img_para"
+            android:layout_height="@dimen/img_para"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/xxsmall"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:background="@color/colorAccent" />
+            android:layout_height="5sp"
+            android:background="@color/colorBtn" />
+
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textColorHint="#cccccc">
+            android:layout_marginTop="@dimen/xxsmall"
+            android:textColorHint="@color/colorText">
 
             <EditText
                 android:id="@+id/requester"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimary"
+                android:layout_height="@dimen/line_height"
+                android:layout_margin="@dimen/xxsmall"
                 android:hint="@string/requester"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textSize="@dimen/medium_txt" />
         </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
 
         <EditText
             android:id="@+id/requester_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimary"
-            android:hint="@string/requester_contact"
+            android:layout_margin="@dimen/xxsmall"
+            android:hint="@string/contact"
             android:inputType="phone"
-            android:textSize="20sp" />
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/medium_txt" />
+        </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textColorHint="#cccccc">
+            android:textColorHint="@color/colorText">
 
             <EditText
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimary"
+                android:layout_margin="@dimen/xxsmall"
                 android:hint="@string/location"
                 android:inputType="textPersonName" />
 
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:layout_width="377dp"
-            android:layout_height="102dp"
-            android:layout_marginTop="15dp"
-            android:textColorHint="#cccccc">
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textColorHint="@color/colorText">
 
             <EditText
                 android:id="@+id/job_description"
                 android:layout_width="match_parent"
                 android:layout_height="113dp"
-                android:backgroundTint="@color/colorPrimary"
                 android:hint="@string/job_description"
                 android:inputType="textMultiLine" />
         </android.support.design.widget.TextInputLayout>
 
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:background="@color/colorAccent" />
-
-        <View
 
             android:layout_width="match_parent"
             android:layout_height="1sp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:background="@color/colorAccent" />
+            android:layout_marginTop="@dimen/medium"
+            android:background="@color/colorBtn" />
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="@color/colorAccent"
-            android:padding="20sp"
-            android:text="Submit"
-            android:textColor="@android:color/white" />
+            android:layout_width="@dimen/btn_para_length"
+            android:layout_height="@dimen/btn_para_height"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="@dimen/xlarge"
+            android:background="@color/colorBtn"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large"/>
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
