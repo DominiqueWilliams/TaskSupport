@@ -35,7 +35,7 @@
             android:layout_marginStart="@dimen/padding_Left"/>
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/job_order_textfield"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -60,7 +60,7 @@
             android:layout_marginStart="@dimen/padding_Left"/>
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/date_field"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -86,7 +86,7 @@
             android:layout_marginStart="@dimen/padding_Left"/>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/requester_textfield"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -114,7 +114,7 @@
 
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/contact_textfield"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -140,7 +140,7 @@
 
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/location_textfield"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -167,7 +167,7 @@
 
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/assigned_textfield"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

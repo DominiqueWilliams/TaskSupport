@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         vwPager = findViewById(R.id.view_pager);
         adapter = new BobbePagerAdapter(getSupportFragmentManager());
-
         vwPager.setAdapter(adapter);
     }
 }
