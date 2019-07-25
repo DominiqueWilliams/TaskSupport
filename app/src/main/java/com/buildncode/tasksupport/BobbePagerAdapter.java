@@ -4,6 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.buildncode.tasksupport.Technician.Page1Fragment;
+import com.buildncode.tasksupport.Technician.Page2Fragment;
+import com.buildncode.tasksupport.Technician.Page3Fragment;
+
 public class BobbePagerAdapter extends FragmentPagerAdapter {
 
     public BobbePagerAdapter(FragmentManager fm) {
