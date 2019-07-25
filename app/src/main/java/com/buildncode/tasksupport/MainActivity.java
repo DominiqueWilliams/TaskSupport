@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ViewPager vwPager;
+    public static ViewPager vwPager;
     private BobbePagerAdapter adapter;
 
     @Override
