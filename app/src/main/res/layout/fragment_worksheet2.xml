@@ -109,7 +109,6 @@
                     style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/line_height"
-                    android:layout_marginStart="@dimen/large"
                     android:text="@string/assign_it"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/check_txt" />
@@ -119,7 +118,6 @@
                     style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/line_height"
-                    android:layout_marginStart="@dimen/large"
                     android:checked="true"
                     android:text="@string/pending"
                     android:textColor="@color/colorText"
@@ -131,8 +129,7 @@
                     android:id="@+id/planned"
                     style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/large"
+                    android:layout_height="@dimen/line_height"
                     android:text="@string/planned"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/check_txt" />
@@ -141,8 +138,7 @@
                     android:id="@+id/solved"
                     style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/large"
+                    android:layout_height="@dimen/line_height"
                     android:text="@string/solved"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/check_txt" />
