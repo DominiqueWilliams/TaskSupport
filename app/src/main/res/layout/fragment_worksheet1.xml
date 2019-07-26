@@ -188,12 +188,13 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/header_size"
-            android:layout_marginEnd="@dimen/inline_spacing"
             android:layout_marginTop="@dimen/header_size"
+            android:layout_marginEnd="@dimen/inline_spacing"
             android:background="@color/colorBtn"
             android:text="@string/back"
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="17sp"
+            android:visibility="invisible" />
 
 
         <Button

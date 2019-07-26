@@ -45,15 +45,13 @@ public class Client extends AppCompatActivity{
         mLocation = mLocationField.getText().toString();
         mJobDescription = mJobDescriptionField.getText().toString();
         mCurrentTime = currentTime.toString();
-        mStatus = getResources().getString(R.string.incomplete);
+        mStatus = getResources().getString(R.string.pending);
         Map task = new HashMap();
         task.put("requester", mRequester);
         task.put("location", mLocation);
         task.put("job_description", mJobDescription);
         task.put("date_time_requester", mCurrentTime);
         task.put("status", mStatus);
-
-        task.put("urgency", "Medium");
         //TODO: Save to DB
     }
 
