@@ -31,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE tasks (" +
+        sqLiteDatabase.execSQL("CREATE TABLE requests (" +
                 "job_id INTEGER PRIMARY  KEY AUTOINCREMENT, " +
                 "requester TEXT, " +
                 "job_description TEXT, " +
@@ -41,10 +41,10 @@ public class DatabaseHelper extends SQLiteOpenHelper{
                 "status TEXT," +
                 "date_time_completed TEXT," +
                 "technician TEXT," +
-                "parts" +
-                "solutions" +
-                "comments" +
-                "contact)");
+                "parts TEXT," +
+                "solutions TEXT," +
+                "comments TEXT," +
+                "contact TEXT)");
     }
 
     @Override
@@ -53,12 +53,36 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         onCreate(sqLiteDatabase);
     }
 
-    public long addRequest(String requester, String job_description, String status){
+    public long addRequest(
+                            String requester,
+                            String job_description,
+                            String date_time_requester,
+                            String location,
+                            String urgency,
+                            String status,
+                            String date_time_completed,
+                            String technician,
+                            String parts,
+                            String solutions,
+                            String comments,
+                            String contact){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("requester",requester);
-        contentValues.put("job_description",job_description);
-        contentValues.put("status",status);
+        contentValues.put("COL_2",requester);
+        contentValues.put("COL_3",job_description);
+        contentValues.put("COL_4",date_time_requester);
+        contentValues.put("COL_5",location);
+        contentValues.put("COL_6",urgency);
+        contentValues.put("COL_7",status);
+        contentValues.put("COL_8",date_time_completed);
+        contentValues.put("COL_9",technician);
+        contentValues.put("COL_10",parts);
+        contentValues.put("COL_11",solutions);
+        contentValues.put("COL_12",comments);
+        contentValues.put("COL_13",contact);
+
+
+
         long res = db.insert("tasks",null,contentValues);
         db.close();
         return  res;

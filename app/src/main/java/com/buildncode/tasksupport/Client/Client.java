@@ -39,7 +39,6 @@ public class Client extends AppCompatActivity{
                 saveTaskInformation();
             }
         });
-        tasksdb = new DatabaseHelper(this);
     }
     private void saveTaskInformation() {
         mRequester = mRequesterField.getText().toString();
