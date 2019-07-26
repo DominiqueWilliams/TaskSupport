@@ -30,8 +30,20 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE tasks (job_id INTEGER PRIMARY  KEY AUTOINCREMENT, requester TEXT, job_description TEXT)");
-        //TODO: Check to see if I need to add more here
+        sqLiteDatabase.execSQL("CREATE TABLE tasks (" +
+                "job_id INTEGER PRIMARY  KEY AUTOINCREMENT, " +
+                "requester TEXT, " +
+                "job_description TEXT, " +
+                "date_time_requester TEXT," +
+                "location TEXT, " +
+                "urgency TEXT," +
+                "status TEXT," +
+                "date_time_completed TEXT," +
+                "technician TEXT," +
+                "parts" +
+                "solutions" +
+                "comments" +
+                "contact)");
     }
 
     @Override
