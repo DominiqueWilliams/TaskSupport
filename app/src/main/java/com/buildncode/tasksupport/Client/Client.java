@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.buildncode.tasksupport.Database.DatabaseHelper;
 import com.buildncode.tasksupport.R;
 
 import java.util.Date;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Client extends AppCompatActivity{
-
+    DatabaseHelper tasksdb;
 
 
     private EditText mRequesterField, mLocationField, mJobDescriptionField;
@@ -38,7 +39,7 @@ public class Client extends AppCompatActivity{
                 saveTaskInformation();
             }
         });
-
+        tasksdb = new DatabaseHelper(this);
     }
     private void saveTaskInformation() {
         mRequester = mRequesterField.getText().toString();
