@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,11 +12,21 @@
 
     />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="155dp" />
 
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:id="@+id/tech_signaturePad"/>
+
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBtn"
+        android:text="@string/clear"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView1"
@@ -26,11 +37,14 @@
         android:layout_gravity="center_horizontal|center_vertical"
         android:textColor="@color/colorText"/>
 
-    <View
-        android:id="@+id/view02"
+
+    <ImageView
+        android:id="@+id/client_signaturePad"
         android:layout_width="match_parent"
         android:layout_height="155dp"
-        android:layout_marginTop="@dimen/large"/>
+        android:layout_marginTop="@dimen/large"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/random_signature" />
 
     <TextView
         android:id="@+id/textView2"
