@@ -23,6 +23,7 @@
 
 
     <RadioGroup
+        android:id="@+id/status_radio_group"
         android:layout_width="match_parent"
         android:layout_height="87dp">
 
@@ -30,18 +31,21 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_height">
 
-            <CheckBox
+            <RadioButton
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                 android:layout_width="@dimen/fifteen"
-                android:layout_height="match_parent"
+                android:layout_height="52dp"
                 android:layout_marginLeft="@dimen/large"
                 android:text="@string/assign_it"
                 android:textColor="@color/colorText"
                 android:textSize="@dimen/check_txt" />
 
-            <CheckBox
+            <RadioButton
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                 android:layout_width="@dimen/fifteen"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/large"
+                android:checked="true"
                 android:text="@string/pending"
                 android:textColor="@color/colorText"
                 android:textSize="@dimen/check_txt" />
@@ -53,7 +57,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/title_size">
 
-            <CheckBox
+            <RadioButton
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                 android:layout_width="@dimen/fifteen"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/large"
@@ -61,7 +66,8 @@
                 android:textColor="@color/colorText"
                 android:textSize="@dimen/check_txt" />
 
-            <CheckBox
+            <RadioButton
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
                 android:layout_width="@dimen/fifteen"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/large"
@@ -84,6 +90,7 @@
         android:textSize="@dimen/large_txt"/>
 
     <RadioGroup
+        android:id="@+id/urgency_radio_group"
         android:layout_width="match_parent"
         android:layout_height="91dp">
 
@@ -110,6 +117,7 @@
             <RadioButton
                 android:layout_width="@dimen/radio_length"
                 android:layout_height="match_parent"
+                android:checked="true"
                 android:text="@string/medium"
                 android:textColor="@color/colorText"
                 android:textSize="@dimen/check_txt" />
