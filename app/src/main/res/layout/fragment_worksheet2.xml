@@ -10,152 +10,158 @@
     tools:ignore="ExtraText"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="@dimen/line_txt_length"
-        android:layout_height="@dimen/line_height"
-        android:layout_marginStart="@dimen/small"
-        android:layout_marginTop="@dimen/small"
-        android:text="@string/status"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/large_txt"/>
-
-
-    <RadioGroup
-        android:id="@+id/status_radio_group"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="87dp">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/xxsmall">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_height">
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/assigned"
-                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
-                android:layout_width="@dimen/fifteen"
-                android:layout_height="52dp"
-                android:layout_marginLeft="@dimen/large"
-                android:text="@string/assign_it"
+            <TextView
+                android:id="@+id/urgency"
+                android:layout_width="@dimen/line_txt_length"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginStart="@dimen/small"
+                android:layout_marginTop="@dimen/xxsmall"
+                android:text="@string/urgency"
                 android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
+                android:textSize="@dimen/large_txt"/>
 
-            <RadioButton
-                android:id="@+id/pending"
-                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
-                android:layout_width="@dimen/fifteen"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/large"
-                android:checked="true"
-                android:text="@string/pending"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
 
+            <RadioGroup
+                android:id="@+id/urgency_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/very_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:text="@string/veryHigh"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+                <RadioButton
+                    android:id="@+id/high"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:text="@string/high"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+                <RadioButton
+                    android:id="@+id/medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:checked="true"
+                    android:text="@string/medium"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+
+                <RadioButton
+                    android:id="@+id/low"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:text="@string/low"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+                <RadioButton
+                    android:id="@+id/very_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:text="@string/verylow"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/title_size">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/planned"
-                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
-                android:layout_width="@dimen/fifteen"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/large"
-                android:text="@string/planned"
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="@dimen/line_txt_length"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginStart="@dimen/small"
+                android:layout_marginTop="@dimen/small"
+                android:text="@string/status"
                 android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
+                android:textSize="@dimen/large_txt"/>
 
-            <RadioButton
-                android:id="@+id/solved"
-                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
-                android:layout_width="@dimen/fifteen"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/large"
-                android:text="@string/solved"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
+
+            <RadioGroup
+                android:id="@+id/status_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/assigned"
+                    style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_marginStart="@dimen/large"
+                    android:text="@string/assign_it"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+                <RadioButton
+                    android:id="@+id/pending"
+                    style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:layout_marginStart="@dimen/large"
+                    android:checked="true"
+                    android:text="@string/pending"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+
+
+                <RadioButton
+                    android:id="@+id/planned"
+                    style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/large"
+                    android:text="@string/planned"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+                <RadioButton
+                    android:id="@+id/solved"
+                    style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/large"
+                    android:text="@string/solved"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/check_txt" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
-    </RadioGroup>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/urgency"
-        android:layout_width="@dimen/line_txt_length"
-        android:layout_height="@dimen/line_height"
-        android:layout_marginStart="@dimen/small"
-        android:layout_marginTop="@dimen/xxsmall"
-        android:text="@string/urgency"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/large_txt"/>
 
-    <RadioGroup
-        android:id="@+id/urgency_radio_group"
-        android:layout_width="match_parent"
-        android:layout_height="91dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_height">
 
-            <RadioButton
-                android:id="@+id/very_high"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/medium"
-                android:layout_marginEnd="@dimen/xsmall"
-                android:text="@string/veryHigh"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
 
-            <RadioButton
-                android:id="@+id/high"
-                android:layout_width="@dimen/btn_padding02"
-                android:layout_height="match_parent"
-                android:text="@string/high"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
 
-            <RadioButton
-                android:id="@+id/medium"
-                android:layout_width="@dimen/radio_length"
-                android:layout_height="match_parent"
-                android:checked="true"
-                android:text="@string/medium"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_height">
 
-            <RadioButton
-                android:id="@+id/low"
-                android:layout_width="@dimen/radio_length"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/xlarge"
-                android:layout_marginEnd="@dimen/medium"
-                android:text="@string/low"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
 
-            <RadioButton
-                android:id="@+id/very_low"
-                android:layout_width="@dimen/radio_length"
-                android:layout_height="match_parent"
-                android:text="@string/verylow"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/check_txt" />
-
-        </LinearLayout>
-
-    </RadioGroup>
 
     <TextView
         android:id="@+id/parts_Used"

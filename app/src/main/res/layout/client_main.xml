@@ -20,7 +20,7 @@
             android:layout_height="@dimen/img_para"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/xxsmall"
-            app:srcCompat="@drawable/ic_menu_gallery" />
+            app:srcCompat="@drawable/ict_centre" />
 
         <View
             android:layout_width="match_parent"

@@ -17,7 +17,7 @@
         android:layout_height="@dimen/img_para"
         android:layout_marginTop="@dimen/padding_Top"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/ic_menu_gallery" />
+        app:srcCompat="@drawable/ict_centre" />
 
 
     <LinearLayout

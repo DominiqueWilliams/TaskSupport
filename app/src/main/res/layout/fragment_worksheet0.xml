@@ -55,7 +55,7 @@
         android:layout_height="@dimen/img_para"
         android:layout_gravity="center_horizontal|center_vertical"
         android:layout_margin="@dimen/header_size"
-        app:srcCompat="@drawable/ic_menu_gallery" />
+        app:srcCompat="@drawable/ict_centre" />
 
     <Button
         android:id="@+id/client"
